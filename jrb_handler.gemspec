@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Paul Sadauskas"]
   s.email       = ["psadauskas@gmail.com"]
-  s.homepage    = ["http://github.com/paul/jrb_handler"]
+  s.homepage    = "http://github.com/paul/jrb_handler"
   s.summary     = "A Rails template handler and renderer for JSON"
   s.description = <<-DESC
     Jrb Handler makes it easy to write JSON web services in Rails 3. Keep your views in views, not in your Model#to_json.
@@ -23,8 +23,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec-rails", ">= 2.0.0"
   s.add_development_dependency "bundler"
 
-  s.add_dependency "active_support", ">= 3.0.3"
-  s.add_dependency "action_pack", ">= 3.0.3"
+  s.add_dependency "activesupport", ">= 3.0.3"
+  s.add_dependency "actionpack", ">= 3.0.3"
 
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
