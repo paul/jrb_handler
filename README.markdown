@@ -2,6 +2,8 @@
 
 JRB Templates makes it easy to write JSON web services in Rails.  Rather than maintaining two views for the collection and the individual resource, or rendering a third via a partial, you only have to write a single `.jrb` view.
 
+*I'll write some tests just as soon an I figure out how to write tests for this thing. Do I need a full-blown Rails app?*
+
 ## Installation
 
 Either
