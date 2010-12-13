@@ -10,9 +10,9 @@ unless respond_to?(:require_relative)
   end
 end
 
-require_relative 'lib/template_handler'
-require_relative 'lib/jrb_partial_renderer'
-require_relative 'lib/renderers'
+require_relative 'jrb_handler/template_handler'
+require_relative 'jrb_handler/jrb_partial_renderer'
+require_relative 'jrb_handler/renderers'
 
 
 

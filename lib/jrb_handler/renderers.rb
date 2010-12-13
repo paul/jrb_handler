@@ -1,5 +1,3 @@
-require 'action_controller'
-
 module JrbHandler::Renderers
 
   EPOCH = Time.utc(2000, 1, 1).iso8601

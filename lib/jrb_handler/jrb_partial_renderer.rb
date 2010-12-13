@@ -1,5 +1,3 @@
-require 'action_view'
-
 module JrbHandler
 
   # Since I can't get the Rails team interested in making these changes, I have to monkey

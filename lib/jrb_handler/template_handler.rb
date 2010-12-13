@@ -1,5 +1,3 @@
-require 'action_view/template/handler'
-
 module JrbHandler
   class TemplateHandler < ActionView::Template::Handler
     include ActionView::Template::Handlers::Compilable
