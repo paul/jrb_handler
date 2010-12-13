@@ -1,0 +1,31 @@
+
+# -*- encoding: utf-8 -*-
+lib = File.expand_path('../lib/', __FILE__)
+$:.unshift lib unless $:.include?(lib)
+
+require "jrb_handler/version"
+
+Gem::Specification.new do |s|
+  s.name        = "jrb_handler"
+  s.version     = JrbHandler::VERSION
+  s.platform    = Gem::Platform::RUBY
+  s.authors     = ["Paul Sadauskas"]
+  s.email       = ["psadauskas@gmail.com"]
+  s.homepage    = ["http://github.com/paul/jrb_handler"]
+  s.summary     = "A Rails template handler and renderer for JSON"
+  s.description = <<-DESC
+    Jrb Handler makes it easy to write JSON web services in Rails 3. Keep your views in views, not in your Model#to_json.
+  DESC
+
+  s.required_rubygems_version = ">=1.3.6"
+
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "bundler"
+
+  s.add_dependency "active_support", ">=3.0"
+  s.add_dependency "action_pack", ">=3.0"
+
+  s.files        = Dir.glob("lib/**/*") + %w[LICENSE README.markdown]
+  s.require_path = 'lib'
+
+end
