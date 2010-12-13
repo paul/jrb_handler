@@ -62,6 +62,39 @@ Then, in your controller:
 
 *Note: I do not recommend using application/json as the mime type extension. Please see [Versioning REST Web Services][].*
 
+Results in the following json:
+
+    # GET /books
+    {
+      href: "http://example.com/books",
+      count: 1,
+      items: [
+        {
+          href: "http://example.com/books/1
+          _type: "Book",
+          title: "Death From the Skies!",
+          author_href: "http://example.com/authors/plait_philip_c".
+          synopsis: " These Are the Ways the World Will End...".
+          isbn: "978-0670019977",
+          created_at: "2010-12-13T18:44:22Z",
+          updated_at: "2010-12-13T18:44:22Z"
+        }
+      ]
+    }
+
+    # GET /books/1
+    {
+      href: "http://example.com/books/1
+      _type: "Book",
+      title: "Death From the Skies!",
+      author_href: "http://example.com/authors/plait_philip_c".
+      synopsis: " These Are the Ways the World Will End...".
+      isbn: "978-0670019977",
+      created_at: "2010-12-13T18:44:22Z",
+      updated_at: "2010-12-13T18:44:22Z"
+    }
+
+
 
 
 
