@@ -17,15 +17,16 @@ Gem::Specification.new do |s|
     Jrb Handler makes it easy to write JSON web services in Rails 3. Keep your views in views, not in your Model#to_json.
   DESC
 
-  s.required_rubygems_version = ">=1.3.6"
+  s.required_rubygems_version = ">= 1.3.6"
 
-  s.add_development_dependency "rspec"
+  s.add_development_dependency "rspec", ">= 2.0.0"
   s.add_development_dependency "bundler"
 
-  s.add_dependency "active_support", ">=3.0"
-  s.add_dependency "action_pack", ">=3.0"
+  s.add_dependency "active_support", ">= 3.0"
+  s.add_dependency "action_pack", ">= 3.0"
 
-  s.files        = Dir.glob("lib/**/*") + %w[LICENSE README.markdown]
-  s.require_path = 'lib'
+  s.files = `git ls-files`.split("\n")
+  s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.require_paths = ['lib']
 
 end
